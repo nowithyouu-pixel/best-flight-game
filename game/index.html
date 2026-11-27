@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kestrel Ridge — Dawn Patrol</title>
+<link rel="icon" href="data:,">
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #101623; }
+  #game { display: block; width: 100vw; height: 100vh; cursor: crosshair; }
+  #status {
+    position: fixed; left: 6px; top: 58px; z-index: 5;
+    font: 11px monospace; color: rgba(207, 227, 255, 0.8);
+    background: rgba(10, 16, 28, 0.55); padding: 2px 6px;
+    pointer-events: none; user-select: none;
+  }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="status">loading…</div>
+<script src="src/config.js"></script>
+<script src="src/random.js"></script>
+<script src="src/terrain.js"></script>
+<script src="src/plane.js"></script>
+<script src="src/input.js"></script>
+<script src="src/missions.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/render.js"></script>
+<script src="src/shots.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
